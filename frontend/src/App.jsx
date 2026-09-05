@@ -460,7 +460,7 @@ function Auth({
         <h2>
           {
             mode === 'login'
-              ? 'Masuk ke GeprekFlow'
+              ? 'Masuk ke Geprek Dapoersari APP'
               : 'Buat akun pelanggan'
           }
         </h2>
@@ -468,7 +468,7 @@ function Auth({
         <p className="auth-sub">
           {
             mode === 'login'
-              ? 'Login pelanggan dan kasir menggunakan Supabase Auth.'
+              ? 'Masukkan Email dan Password.'
               : 'Akun register otomatis menjadi pelanggan.'
           }
         </p>
@@ -699,23 +699,22 @@ function CustomerStoreSidebar({
     <aside className="customer-store-sidebar">
 
       <Link
-        to="/"
-        className="store-brand"
-      >
-        <div className="store-logo">
-          G
-        </div>
+          to="/"
+          className="store-brand"
+        >
+          <div className="brand-logo-box">
+            <img
+              src="/logo-dapoersari.png"
+              alt="Dapoersari"
+              className="brand-logo-image"
+            />
+          </div>
 
-        <div>
-          <strong>
-            Geprek Dapoersari
-          </strong>
-
-          <span>
-            Ayam Geprek
-          </span>
-        </div>
-      </Link>
+          <div className="brand-app-name">
+            <strong>Dapoersari APP</strong>
+            <span>Ayam Geprek</span>
+          </div>
+        </Link>
 
 
       <nav className="store-nav">
@@ -821,21 +820,20 @@ function CustomerStoreHeader({
 
       <div className="customer-mobile-brand">
 
-        <div className="store-logo small">
-          G
-        </div>
+  <div className="mobile-brand-logo-box">
+    <img
+      src="/logo-dapoersari.png"
+      alt="Dapoersari"
+      className="mobile-brand-logo"
+    />
+  </div>
 
-        <div>
-          <strong>
-            GeprekDapoersari
-          </strong>
+  <div className="mobile-brand-text">
+    <strong>Dapoersari APP</strong>
+    <span>Ayam Geprek</span>
+  </div>
 
-          <span>
-            Ayam Geprek
-          </span>
-        </div>
-
-      </div>
+</div>
 
       {isHome ? (
         <div className="customer-search customer-home-search">
@@ -1145,9 +1143,8 @@ function CustomerHome({
 
           {greeting},{' '}
 
-          <strong>
-            {customerName}
-          </strong>
+          {customerName}
+
 
           {' '}👋
 
@@ -2647,16 +2644,22 @@ function CashierApp({
           <Menu size={22} />
         </button>
 
-        <div className="cashier-mobile-brand">
-          <div className="cashier-mobile-logo">
-            G
-          </div>
+         <div className="cashier-mobile-brand">
 
-          <div>
-            <strong>Geprek Dapoersari</strong>
-            <span>Cashier Center</span>
-          </div>
-        </div>
+    <div className="cashier-mobile-logo-box">
+      <img
+        src="/logo-dapoersari.png"
+        alt="Dapoersari"
+        className="cashier-mobile-logo-image"
+      />
+    </div>
+
+    <div className="cashier-mobile-brand-text">
+      <strong>Dapoersari APP</strong>
+      <span>Cashier Center</span>
+    </div>
+
+  </div>
 
       </header>
 
@@ -2684,18 +2687,17 @@ function CashierApp({
           className="brand-link"
           onClick={closeMenu}
         >
-          <div className="logo-mark">
-            G
+          <div className="brand-logo-box">
+            <img
+              src="/logo-dapoersari.png"
+              alt="Dapoersari"
+              className="brand-logo-image"
+            />
           </div>
 
-          <div>
-            <strong>
-              Geprek Dapoersari
-            </strong>
-
-            <span>
-              Cashier Center
-            </span>
+          <div className="brand-app-name">
+            <strong>Dapoersari APP</strong>
+            <span>Cashier Center</span>
           </div>
         </Link>
 
@@ -2848,45 +2850,10 @@ function CashierApp({
   );
 }
 
-function Header({
-  profile
-}) {
+function Header() {
   return (
     <header className="header">
-
-      <div>
-
-        
-
-      </div>
-
-      <div className="header-profile">
-
-        <div className="header-avatar">
-          {
-            (
-              profile.full_name ||
-              'K'
-            )[0]
-          }
-        </div>
-
-        <div>
-
-          <strong>
-            {
-              profile.full_name
-            }
-          </strong>
-
-          <span>
-            CASHIER
-          </span>
-
-        </div>
-
-      </div>
-
+      <div />
     </header>
   );
 }

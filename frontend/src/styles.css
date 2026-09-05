@@ -5532,3 +5532,531 @@ button{
   }
 
 }
+
+/* =========================================================
+   LOGO DAPOERSARI
+========================================================= */
+
+.store-brand{
+  display:flex;
+  align-items:center;
+
+  gap:11px;
+
+  width:100%;
+
+  margin:2px 5px 32px;
+
+  text-decoration:none;
+
+  min-width:0;
+}
+
+
+/* CONTAINER LOGO */
+
+.brand-logo-box{
+  width:46px;
+  height:46px;
+
+  min-width:46px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:7px;
+
+  box-sizing:border-box;
+
+  border-radius:13px;
+
+  background:#ffffff;
+
+  border:1px solid rgba(255,255,255,.10);
+
+  box-shadow:
+    0 5px 16px rgba(0,0,0,.14);
+
+  overflow:hidden;
+}
+
+
+/* LOGO DI DALAM CONTAINER */
+
+.brand-logo-image{
+  display:block;
+
+  width:100%;
+  height:100%;
+
+  object-fit:contain;
+  object-position:center;
+
+  border-radius:7px;
+}
+
+
+/* TEXT BRAND */
+
+.brand-app-name{
+  min-width:0;
+
+  display:flex;
+  flex-direction:column;
+
+  justify-content:center;
+}
+
+
+.brand-app-name strong{
+  display:block;
+
+  font-family:'Manrope', sans-serif;
+
+  font-size:15px;
+  font-weight:800;
+
+  line-height:1.15;
+
+  letter-spacing:-.035em;
+
+  color:#ffffff;
+
+  white-space:nowrap;
+
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+
+.brand-app-name span{
+  display:block;
+
+  margin-top:4px;
+
+  font-family:'DM Sans', sans-serif;
+
+  font-size:9px;
+  font-weight:500;
+
+  line-height:1.2;
+
+  color:#98a2b3;
+
+  white-space:nowrap;
+}
+
+
+/* HOVER */
+
+.store-brand:hover .brand-logo-box{
+  transform:translateY(-1px);
+
+  box-shadow:
+    0 7px 20px rgba(0,0,0,.18);
+}
+
+.store-brand:hover .brand-app-name strong{
+  color:#ffffff;
+}
+
+/* =========================================================
+   CUSTOMER MOBILE BRAND
+========================================================= */
+
+.customer-mobile-brand{
+  display:none;
+  align-items:center;
+  gap:9px;
+  min-width:0;
+}
+
+
+/* CONTAINER LOGO */
+
+.mobile-brand-logo-box{
+  width:38px;
+  height:38px;
+
+  min-width:38px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:5px;
+
+  box-sizing:border-box;
+
+  background:#fff;
+
+  border:1px solid #e4e7ec;
+  border-radius:10px;
+
+  overflow:hidden;
+
+  box-shadow:
+    0 2px 8px rgba(16,24,40,.08);
+}
+
+
+/* LOGO */
+
+.mobile-brand-logo{
+  display:block;
+
+  width:100%;
+  height:100%;
+
+  object-fit:contain;
+  object-position:center;
+}
+
+
+/* TEXT */
+
+.mobile-brand-text{
+  min-width:0;
+
+  display:flex;
+  flex-direction:column;
+}
+
+
+.mobile-brand-text strong{
+  display:block;
+
+  max-width:125px;
+
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+
+  font-family:'Manrope',sans-serif;
+
+  font-size:12px;
+  font-weight:800;
+
+  line-height:1.2;
+
+  color:#101828;
+}
+
+
+.mobile-brand-text span{
+  display:block;
+
+  margin-top:2px;
+
+  font-size:8px;
+
+  color:#98a2b3;
+}
+
+
+/* =========================================================
+   SHOW MOBILE BRAND
+========================================================= */
+
+@media(max-width:1000px){
+
+  .customer-mobile-brand{
+    display:flex;
+  }
+
+}
+
+
+/* =========================================================
+   HP
+========================================================= */
+
+@media(max-width:700px){
+
+  .mobile-brand-logo-box{
+    width:36px;
+    height:36px;
+
+    min-width:36px;
+
+    border-radius:9px;
+
+    padding:5px;
+  }
+
+  .mobile-brand-text strong{
+    font-size:11px;
+    max-width:110px;
+  }
+
+  .mobile-brand-text span{
+    font-size:7px;
+  }
+
+}
+
+
+/* =========================================================
+   HP KECIL
+========================================================= */
+
+@media(max-width:380px){
+
+  .mobile-brand-logo-box{
+    width:34px;
+    height:34px;
+
+    min-width:34px;
+  }
+
+  .mobile-brand-text strong{
+    font-size:10px;
+    max-width:95px;
+  }
+
+}
+
+/* =========================================================
+   CASHIER MOBILE BRAND
+========================================================= */
+
+.cashier-mobile-topbar{
+  display:none;
+}
+
+
+/* =========================================================
+   TABLET & MOBILE
+========================================================= */
+
+@media (max-width:1000px){
+
+  .cashier-mobile-topbar{
+    position:fixed;
+
+    top:0;
+    left:0;
+    right:0;
+
+    height:64px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 16px;
+
+    background:#fff;
+
+    border-bottom:1px solid #e4e7ec;
+
+    box-shadow:
+      0 2px 10px rgba(16,24,40,.05);
+
+    z-index:1200;
+  }
+
+
+  .cashier-menu-button{
+    width:40px;
+    height:40px;
+
+    flex:0 0 40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:0;
+
+    border:1px solid #e4e7ec;
+    border-radius:10px;
+
+    background:#fff;
+
+    color:#101828;
+  }
+
+
+  .cashier-mobile-brand{
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    margin-left:11px;
+
+    min-width:0;
+  }
+
+
+  /* CONTAINER LOGO */
+
+  .cashier-mobile-logo-box{
+    width:40px;
+    height:40px;
+
+    min-width:40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:5px;
+
+    box-sizing:border-box;
+
+    background:#fff;
+
+    border:1px solid #e4e7ec;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:
+      0 2px 8px rgba(16,24,40,.07);
+  }
+
+
+  /* GAMBAR LOGO */
+
+  .cashier-mobile-logo-image{
+    display:block;
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+    object-position:center;
+  }
+
+
+  /* TEKS BRAND */
+
+  .cashier-mobile-brand-text{
+    min-width:0;
+
+    display:flex;
+    flex-direction:column;
+  }
+
+
+  .cashier-mobile-brand-text strong{
+    display:block;
+
+    color:#101828;
+
+    font-family:'Manrope',sans-serif;
+
+    font-size:12px;
+    font-weight:800;
+
+    line-height:1.15;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+
+  .cashier-mobile-brand-text span{
+    display:block;
+
+    margin-top:3px;
+
+    color:#98a2b3;
+
+    font-size:8px;
+
+    line-height:1.2;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:700px){
+
+  .cashier-mobile-topbar{
+    height:58px;
+
+    padding:
+      0 12px;
+  }
+
+
+  .cashier-menu-button{
+    width:38px;
+    height:38px;
+
+    flex-basis:38px;
+  }
+
+
+  .cashier-mobile-logo-box{
+    width:36px;
+    height:36px;
+
+    min-width:36px;
+
+    padding:5px;
+
+    border-radius:9px;
+  }
+
+
+  .cashier-mobile-brand{
+    gap:8px;
+
+    margin-left:9px;
+  }
+
+
+  .cashier-mobile-brand-text strong{
+    font-size:11px;
+  }
+
+
+  .cashier-mobile-brand-text span{
+    font-size:7px;
+  }
+
+
+  .cashier-layout .main-content{
+    padding-top:76px !important;
+  }
+
+}
+
+
+/* =========================================================
+   HP KECIL
+========================================================= */
+
+@media (max-width:380px){
+
+  .cashier-mobile-topbar{
+    padding:
+      0 9px;
+  }
+
+
+  .cashier-mobile-logo-box{
+    width:34px;
+    height:34px;
+
+    min-width:34px;
+  }
+
+
+  .cashier-mobile-brand-text strong{
+    font-size:10px;
+  }
+
+}
